@@ -120,3 +120,26 @@ http://localhost/osticket/setup/
 
 If you encounter a 500 error:
 Download and install the IIS URL Rewrite module.
+
+## Step 6. Complete the Installation**
+   1. Follow the on-screen instructions in the osTicket setup wizard:
+      - Provide database details:
+         - Database Name: `osticket`
+         - Username: `ost_user`
+         - Password: `your_password`
+      - Configure admin credentials and site information.
+   2. Once installed, remove the `setup` directory for security:
+      ```bash
+      C:\inetpub\wwwroot\osticket\setup
+      ```
+
+## Step 7. Test osTicket**
+   1. Access osTicket at:
+      ```bash
+      http://localhost/osticket/
+      ```
+   2. Log in with the admin in admin panel at:
+      ```bash
+      http://localhost/osticket/scp
+      ```
+
