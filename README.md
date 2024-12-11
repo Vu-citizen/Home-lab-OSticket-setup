@@ -66,12 +66,8 @@ Open your browser and navigate to the following URL:
 http://localhost/info.php
 
 
-If you are accessing the server remotely, replace localhost with your server's IP address or domain name.
-Expected Outcome
-If PHP is correctly installed and configured, a page displaying your PHP version and configuration details should appear.
-
-vbnet
-Copy code
+and you will see a image like this 
+![image](https://github.com/user-attachments/assets/4c76f25f-fabc-41ef-879b-dcd780622adb)
 
 This step ensures users can verify that PHP is properly installed and working.
 
