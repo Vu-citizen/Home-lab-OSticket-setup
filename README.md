@@ -82,12 +82,31 @@ Open your browser and navigate to the following URL:
 http://localhost/info.php
 
 
-If you are accessing the server remotely, replace localhost with your server's IP address or domain name.
-Expected Outcome
-If PHP is correctly installed and configured, a page displaying your PHP version and configuration details should appear.
+and you should able to see the result like this image.
+![image](https://github.com/user-attachments/assets/a6d0af54-be69-424c-abfe-3f1b4e5c2088)
 
-vbnet
-Copy code
 
-This step ensures users can verify that PHP is properly installed and working.
+This ensures users can verify that PHP is properly installed and working.
+## Step 4: Install MariaDB
+
+This step involves installing and configuring MariaDB, which osTicket will use as its database.
+
+Steps:
+
+1. Download and Install MariaDB:
+**MariaDB**  
+     [Download MariaDB](https://mariadb.org/download/?t=mariadb&p=mariadb&r=11.6.2&os=windows&cpu=x86_64&pkg=msi&mirror=acorn)
+
+2 .Follow the installation wizard and set a strong root password during the setup process.
+
+Configure the Database:
+
+Use a database management tool like HeidiSQL to log in to your MariaDB server.
+
+  -Create a new database named osticket.
+
+  -Create a user with restricted permissions to only access the osticket database for security purposes.
+
+By completing this step, your database will be ready for use with osTicket.
+
 
