@@ -1,4 +1,3 @@
-# Home-lab-OSticket-setup
 <h1>Home Lab setting up technical support/help desk ticketing system Osticket from the ground up </h1>
 
 
