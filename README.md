@@ -146,4 +146,5 @@ Download and install the IIS URL Rewrite module.
 
       ```
 
-   ![image](https://github.com/user-attachments/assets/e512b371-2714-47c4-8048-f4bc6ce6573f)
+   ![image](https://github.com/user-attachments/assets/9601e0bd-63d8-409f-8bd9-0d27febbc4b9)
+
