@@ -20,3 +20,53 @@ Before you start, ensure you have:
      [Download osTicket v1.18.1](https://github.com/osTicket/osTicket/releases/tag/v1.18.1)
    - **Microsoft URL Rewrite**  
      [Download URL Rewrite](https://www.iis.net/downloads/microsoft/url-rewrite)
+
+## Step 2: Install PHP
+To ensure PHP can run, first install the **Microsoft Visual C++ Redistributable**.
+
+1. **Download and Prepare PHP**:
+   - Download the **PHP Non-Thread-Safe** version from [PHP for Windows](https://windows.php.net/download#php-8.4).
+   - Extract the PHP files to `C:\PHP`.
+
+2. **Configure PHP**:
+   - Rename `php.ini-development` to `php.ini`.
+   - Edit the `php.ini` file to enable the required extensions:
+     ```ini
+     extension_dir = "C:\PHP\ext"
+     extension=mysqli
+     extension=gd2
+     extension=imap
+     extension=intl
+     extension=mbstring
+     extension=openssl
+     extension=xml
+     extension=curl
+     ```
+   - Save the file.
+
+3. **Add PHP to the System PATH**:
+   - Right-click **Computer** > **Properties** > **Advanced system settings** > **Environment Variables**.
+   - Under **System Variables**, find `Path`, click **Edit**, and add `;C:\PHP` at the end.
+
+
+4. Test PHP Configuration
+
+ 1. Create a PHP Test File
+- Navigate to your web root directory (usually `C:\inetpub\wwwroot` for IIS).
+- Create a new file named `info.php`.
+- Open the file in a text editor (e.g., Notepad) and add the following code:
+  ```php
+  <?php
+  phpinfo();
+  ?>
+Save the file.
+2. Check PHP Configuration
+Open your browser and navigate to the following URL:
+arduino
+Copy code
+http://localhost/info.php
+If you are accessing the server remotely, replace localhost with your server's IP address or domain name.
+By completing these steps, your server will be configured to support PHP.
+
+
+
