@@ -109,4 +109,14 @@ Use a database management tool like HeidiSQL to log in to your MariaDB server.
 
 By completing this step, your database will be ready for use with osTicket.
 
+## Step 5. Download and Configure osTicket
 
+Download osTicket from the official website.
+Extract the osTicket files (from the upload folder) and rename the upload folder to osticket (so it becomes C:\inetpub\wwwroot\osticket).
+Grant IUSR modify, write, and read permissions to the osticket folder.
+Open your browser and navigate to:
+
+http://localhost/osticket/setup/
+
+If you encounter a 500 error:
+Download and install the IIS URL Rewrite module.
