@@ -6,7 +6,7 @@
 
 Before you start, ensure you have:
 
-1. **Windows Server 2012** installed and configured.
+1. **Windows Server 2022 or 2019 might also work on Windows Pro with IIS** installed and configured.
 2. **Administrative access** to the server.
 3. A **stable internet connection**.
 4. The following software installed or ready to install:
