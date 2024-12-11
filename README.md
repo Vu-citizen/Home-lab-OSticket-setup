@@ -48,8 +48,24 @@ To ensure PHP can run, first install the **Microsoft Visual C++ Redistributable*
    - Right-click **Computer** > **Properties** > **Advanced system settings** > **Environment Variables**.
    - Under **System Variables**, find `Path`, click **Edit**, and add `;C:\PHP` at the end.
 
+## Step 3: Configure IIS for PHP
 
-4. Test PHP Configuration
+This step ensures that IIS (Internet Information Services) can correctly handle and execute PHP scripts using the FastCGI module. By default, IIS does not recognize or process `.php` files.
+
+### Steps:
+1. Open **IIS Manager**.
+2. Select your server from the left panel.
+3. Double-click **Handler Mappings** in the middle panel.
+4. Add a new **Module Mapping**:
+   - **Request Path**: `*.php`
+   - **Module**: `FastCGIModule`
+   - **Executable**: `C:\PHP\php-cgi.exe`
+   - **Name**: `PHP via FastCGI`
+5. Click **OK** and confirm enabling the mapping when prompted.
+
+After completing this step, IIS will be able to process `.php` files using PHP.
+
+6. Test PHP Configuration
 
  1. Create a PHP Test File
 - Navigate to your web root directory (usually `C:\inetpub\wwwroot` for IIS).
@@ -66,8 +82,12 @@ Open your browser and navigate to the following URL:
 http://localhost/info.php
 
 
-and you will see a image like this 
-![image](https://github.com/user-attachments/assets/4c76f25f-fabc-41ef-879b-dcd780622adb)
+If you are accessing the server remotely, replace localhost with your server's IP address or domain name.
+Expected Outcome
+If PHP is correctly installed and configured, a page displaying your PHP version and configuration details should appear.
+
+vbnet
+Copy code
 
 This step ensures users can verify that PHP is properly installed and working.
 
