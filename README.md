@@ -143,7 +143,7 @@ Download and install the IIS URL Rewrite module.
    2. Log in with the admin in admin panel at:
       ```bash
       http://localhost/osticket/scp
-      ![image](https://github.com/user-attachments/assets/e6b7362d-43bd-47ef-9e56-cc3c69f41a45)
 
       ```
 
+     ![image](https://github.com/user-attachments/assets/e512b371-2714-47c4-8048-f4bc6ce6573f)
