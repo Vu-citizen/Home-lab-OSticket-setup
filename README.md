@@ -62,9 +62,10 @@ To ensure PHP can run, first install the **Microsoft Visual C++ Redistributable*
 - Save the file.
 2. Check PHP Configuration
 Open your browser and navigate to the following URL:
-arduino
-Copy code
+
 http://localhost/info.php
+
+
 If you are accessing the server remotely, replace localhost with your server's IP address or domain name.
 Expected Outcome
 If PHP is correctly installed and configured, a page displaying your PHP version and configuration details should appear.
