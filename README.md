@@ -148,3 +148,8 @@ Download and install the IIS URL Rewrite module.
 
    ![image](https://github.com/user-attachments/assets/9601e0bd-63d8-409f-8bd9-0d27febbc4b9)
 
+  3. ticket interaction between user-
+     ![image](https://github.com/user-attachments/assets/b874a965-927c-468b-80c5-1a393bcdd79a)
+    ![image](https://github.com/user-attachments/assets/7872a23f-68d7-48b5-b868-7705749ca234)
+
+     
